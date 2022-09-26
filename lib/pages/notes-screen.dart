@@ -43,7 +43,7 @@ class _MyNotesPageState extends State<MyNotesPage> {
                 maxLines: 27,
                 controller: _note,
                 decoration: const InputDecoration(
-                  hintText: 'Catatan Rahasiaku',
+                  hintText: 'Catatan',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
                       Radius.circular(5),
@@ -62,7 +62,7 @@ class _MyNotesPageState extends State<MyNotesPage> {
                   );
                   ScaffoldMessenger.of(context).showSnackBar(snackBar);
                 },
-                child: const Text('Simpan'),
+                child: const Text('Save'),
               ),
             ),
             Container(
@@ -71,7 +71,7 @@ class _MyNotesPageState extends State<MyNotesPage> {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: const Text('Tutup Catatan Rahasia'),
+                child: const Text('Close'),
               ),
             ),
           ],
